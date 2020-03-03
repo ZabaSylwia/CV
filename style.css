@@ -376,14 +376,13 @@
                         }
                         
                         img {
-                            border: 0px hsl(47, 99%, 51%) solid;
-                            /* la bordure invisible autour d'image vas nous permmert à l'arrondir après*/
-                            border-radius: 50%;
-                            /*on rend l'image ronde*/
-                            box-shadow: 6px 6px 20px grey;
-                            /*l*ombre d'image*/
-                            margin-bottom: 5%;
-                        }
+                            display: block; /*on demande pour que la balise d'image (inline) se comporte comme un block*/
+                            border: 2px hsl(47, 96%, 32%) solid; /* la bordure invisible autour d'image vas nous permmert à l'arrondir après*/
+                            border-radius: 50%; /*on rend l'image ronde*/
+                            width: 60%;
+                            margin: 0 auto;
+                            margin-bottom: 2rem;                       
+                            }
                         
                         #leftcolumn header {
                             align-self: center;
