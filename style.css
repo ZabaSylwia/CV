@@ -506,7 +506,7 @@
                             grid-template-columns: 2rem 20% 80%;
                         }
                         
-                        .description
+                        li div
                         /* partie droite de liste a pouces (div)*/
                         
                         {
@@ -641,32 +641,38 @@
                             }
 
                             li p{
-                                grid-area: date;                            
+                                grid-area: date;   
+                                margin-bottom: 0;
+                                                        
                             }
 
                             li div
                             {
                                 grid-area: description;
+                                text-align: justify;
+                                padding: 0;
                             }
 
-                            #rightcolumn br{
-                                display: none;
-                            }
-
+                        
                             li{
                                 
                                 grid-template-columns: 2rem 50% 50%;
-                                grid-template-rows: 20% 80%;
+                                grid-template-rows: 20% 1rem 80%;
                                 grid-template-areas: 
                                     "dot date ."
+                                    ". . ."
                                     ". description description";
                             }
 
                             /*fin grid*/
 
-                            li p{                                
+                            li p{     /* la taille de police de paragraphes*/                            
                                 font-size: 2rem;
                                 
+                            }
+
+                            h4{
+                                font-size: 2.5rem;
                             }
 
                         }
