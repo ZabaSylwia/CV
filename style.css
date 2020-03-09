@@ -577,3 +577,35 @@
                             margin: 2rem;
                             width: 50%;
                         }
+
+                        @media screen and (max-width: 640px){
+                            body{
+                                flex-direction: column;
+                                margin-right: 5%;
+                                margin-left: 5%;
+                            }
+
+                            #leftcolumn{
+                                width: 100%;
+                            }
+                                                
+                            h3{
+                                font-size: 2rem;
+                            }
+
+                            #hobbies{
+                                display: none;
+                            }
+
+                            #leftcolumn p{
+                                font-size: 1.5rem;
+                                margin: 5%;
+                            }
+
+                           
+
+
+                        }
+
+
+                    
