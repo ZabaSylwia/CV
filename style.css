@@ -506,7 +506,7 @@
                             grid-template-columns: 2rem 20% 80%;
                         }
                         
-                        .description
+                        li div
                         /* partie droite de liste a pouces (div)*/
                         
                         {
@@ -525,7 +525,7 @@
                             padding-top: 0px;
                         }
                         
-                        .flexbox_right p
+                        li p
                         /* il s'agit de dates dans la piste a pouces*/
                         
                         {
@@ -577,3 +577,118 @@
                             margin: 2rem;
                             width: 50%;
                         }
+
+                        /*Responsive mobile*/
+
+                        @media screen and (max-width: 640px){
+                            body{
+                                flex-direction: column;
+                                margin-right: 0%;
+                                margin-left: 0%;
+                            }
+
+                            /*Colone gauche*/
+
+                            #leftcolumn{
+                                width: 100%;/*Je veux qu'elle prends toute l'espace*/
+                            }
+                                                
+                            h3{
+                                font-size: 3rem;
+                            }
+
+                            #hobbies{
+                                display: none;/*j'ai caché les loisirs pour ne pas trop charger le site en mobile*/
+                            }
+
+                            #leftcolumn p{ /* j'ai agrandi la taille de police dans les paragraphes et j'ai reduit les marges*/
+                                font-size: 2rem; 
+                                margin: 5%;
+                            }
+
+                            /* Colone droite*/
+
+                            #rightcolumn{
+                                width: 100%;/*encore une fois - je veux que la colone prends toute l'espace*/
+                            }
+
+                            #rightcolumn header{ /*j'ai changé l'alignement du texte et j'ai enlevé les marges*/
+                               text-align: center;
+                               margin: auto;
+                               margin-bottom: 7%;  
+                               font-size: 2.2rem;                                                        
+                            }
+
+                            h1{/* j'agrendi le texte -  le nom et le prénom*/
+                                font-size: 5rem;
+                            }
+
+                            .smallunderline{/* j'ai caché la ligne sous le métier*/
+                                display: none;
+                            }
+
+                            article h2{/*titres : formations , exp pro etc...*/
+                                font-size: 3rem;   
+                                text-align: center;                            
+                            }
+                            
+                            /*Display dans les listes*/
+
+                            /*J'ai donné le 'nom' a chaque elemet dans la liste pour le bien disposer dans le grid*/
+
+                            li i {
+                                grid-area: dot;
+                                font-size: 2rem;
+                            }
+
+                            li p{
+                                grid-area: date;   
+                                margin-bottom: 0;
+                                                        
+                            }
+
+                            li div
+                            {
+                                grid-area: description;
+                                text-align: justify;
+                                padding: 0;
+                            }
+
+                        
+                            li{
+                                margin-bottom: 5%;
+                                grid-template-columns: 4rem 50% 50%;
+                                grid-template-rows: 30% 1rem 70%;
+                                grid-template-areas: 
+                                    "dot date ."
+                                    ". . ."
+                                    ". description description";
+                            }
+
+                            /*fin grid*/
+
+                            #rightcolumn article{
+                                margin-bottom: 10%;
+                            }
+
+                            li p{     /* la taille de police de paragraphes*/                            
+                                font-size: 2rem;
+                                
+                            }
+
+                            li span{
+                                display: none;
+                            }
+
+                            h4{
+                                font-size: 2.5rem;
+                            }
+
+                            #reference{
+                                display: none;
+                            }
+
+                        }
+
+
+                    
