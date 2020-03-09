@@ -525,7 +525,7 @@
                             padding-top: 0px;
                         }
                         
-                        .flexbox_right p
+                        li p
                         /* il s'agit de dates dans la piste a pouces*/
                         
                         {
@@ -581,8 +581,8 @@
                         @media screen and (max-width: 640px){
                             body{
                                 flex-direction: column;
-                                margin-right: 5%;
-                                margin-left: 5%;
+                                margin-right: 0%;
+                                margin-left: 0%;
                             }
 
                             #leftcolumn{
@@ -590,7 +590,7 @@
                             }
                                                 
                             h3{
-                                font-size: 2rem;
+                                font-size: 3rem;
                             }
 
                             #hobbies{
@@ -598,12 +598,11 @@
                             }
 
                             #leftcolumn p{
-                                font-size: 1.5rem;
+                                font-size: 2rem;
                                 margin: 5%;
                             }
 
-                           
-
+                            
 
                         }
 
