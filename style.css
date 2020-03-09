@@ -623,18 +623,15 @@
                                 font-size: 5rem;
                             }
 
-                            .smallunderline{/* j'ai caché la ligne sous le métier*/
+                            article h2{/*texte du métier*/
+                                font-size: 3rem;                               
+                            }
+
+                            .smallunderline{
                                 display: none;
                             }
 
-                            article h2{/*titres : formations , exp pro etc...*/
-                                font-size: 3rem;   
-                                text-align: center;                            
-                            }
                             
-                            /*Display dans les listes*/
-
-                            /*J'ai donné le 'nom' a chaque elemet dans la liste pour le bien disposer dans le grid*/
 
                             li i {
                                 grid-area: dot;
@@ -649,7 +646,7 @@
                                 grid-area: description;
                             }
 
-                            #rightcolumn br{
+                            br{
                                 display: none;
                             }
 
@@ -661,8 +658,6 @@
                                     "dot date ."
                                     ". description description";
                             }
-
-                            /*fin grid*/
 
                             li p{                                
                                 font-size: 2rem;
