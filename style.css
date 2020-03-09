@@ -578,6 +578,8 @@
                             width: 50%;
                         }
 
+                        /*Responsive mobile*/
+
                         @media screen and (max-width: 640px){
                             body{
                                 flex-direction: column;
@@ -585,8 +587,10 @@
                                 margin-left: 0%;
                             }
 
+                            /*Colone gauche*/
+
                             #leftcolumn{
-                                width: 100%;
+                                width: 100%;/*Je veux qu'elle prends toute l'espace*/
                             }
                                                 
                             h3{
@@ -594,15 +598,71 @@
                             }
 
                             #hobbies{
-                                display: none;
+                                display: none;/*j'ai caché les loisirs pour ne pas trop charger le site en mobile*/
                             }
 
-                            #leftcolumn p{
-                                font-size: 2rem;
+                            #leftcolumn p{ /* j'ai agrandi la taille de police dans les paragraphes et j'ai reduit les marges*/
+                                font-size: 2rem; 
                                 margin: 5%;
                             }
 
+                            /* Colone droite*/
+
+                            #rightcolumn{
+                                width: 100%;/*encore une fois - je veux que la colone prends toute l'espace*/
+                            }
+
+                            #rightcolumn header{ /*j'ai changé l'alignement du texte et j'ai enlevé les marges*/
+                               text-align: center;
+                               margin: auto;
+                               margin-bottom: 7%;  
+                               font-size: 2.2rem;                                                        
+                            }
+
+                            h1{/* j'agrendi le texte -  le nom et le prénom*/
+                                font-size: 5rem;
+                            }
+
+                            article h2{/*texte du métier*/
+                                font-size: 3rem;                               
+                            }
+
+                            .smallunderline{
+                                display: none;
+                            }
+
                             
+
+                            li i {
+                                grid-area: dot;
+                            }
+
+                            li p{
+                                grid-area: date;                            
+                            }
+
+                            li div
+                            {
+                                grid-area: description;
+                            }
+
+                            br{
+                                display: none;
+                            }
+
+                            li{
+                                
+                                grid-template-columns: 2rem 50% 50%;
+                                grid-template-rows: 20% 80%;
+                                grid-template-areas: 
+                                    "dot date ."
+                                    ". description description";
+                            }
+
+                            li p{                                
+                                font-size: 2rem;
+                                
+                            }
 
                         }
 
