@@ -638,6 +638,7 @@
 
                             li i {
                                 grid-area: dot;
+                                font-size: 2rem;
                             }
 
                             li p{
@@ -655,9 +656,9 @@
 
                         
                             li{
-                                
-                                grid-template-columns: 2rem 50% 50%;
-                                grid-template-rows: 20% 1rem 80%;
+                                margin-bottom: 5%;
+                                grid-template-columns: 4rem 50% 50%;
+                                grid-template-rows: 30% 1rem 70%;
                                 grid-template-areas: 
                                     "dot date ."
                                     ". . ."
@@ -666,13 +667,25 @@
 
                             /*fin grid*/
 
+                            #rightcolumn article{
+                                margin-bottom: 10%;
+                            }
+
                             li p{     /* la taille de police de paragraphes*/                            
                                 font-size: 2rem;
                                 
                             }
 
+                            li span{
+                                display: none;
+                            }
+
                             h4{
                                 font-size: 2.5rem;
+                            }
+
+                            #reference{
+                                display: none;
                             }
 
                         }
