@@ -603,6 +603,17 @@
                                 margin: 5%;
                             }
 
+                            #icons span{
+                                
+                                width: 5rem;
+                                height: 5rem;
+                                padding: 1.5rem;
+                            }
+
+                            span i{
+                                font-size: 5rem;
+                            }
+
                             /* Colone droite*/
 
                             #rightcolumn{
@@ -706,8 +717,8 @@
 
                             #icons{
                                 display: flex;
-                                flex-direction: column;
-                            }
+                                flex-direction: column;                               
+                            }                   
 
                              /* Colone droite*/
 
