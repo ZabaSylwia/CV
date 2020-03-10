@@ -578,9 +578,10 @@
                             width: 50%;
                         }
 
-                        /*Responsive mobile*/
+                        /*Responsive mobile - small*/
 
                         @media screen and (max-width: 640px){
+
                             body{
                                 flex-direction: column;
                                 margin-right: 0%;
@@ -595,11 +596,7 @@
                                                 
                             h3{
                                 font-size: 3rem;
-                            }
-
-                            #hobbies{
-                                display: none;/*j'ai caché les loisirs pour ne pas trop charger le site en mobile*/
-                            }
+                            }                            
 
                             #leftcolumn p{ /* j'ai agrandi la taille de police dans les paragraphes et j'ai reduit les marges*/
                                 font-size: 2rem; 
@@ -684,11 +681,57 @@
                                 font-size: 2.5rem;
                             }
 
-                            #reference{
-                                display: none;
-                            }
+                        
 
                         }
+
+                        /*Responsive mobile - medium*/
+
+                        @media all and (min-width: 640px) and (max-width: 1199px){
+                            body{
+                                margin-right: 10%;
+                                margin-left: 10%;
+                            }
+
+                            /*Colone gauche*/ 
+                            
+                            h3{
+                                font-size: 2rem;
+                                
+                            }
+                        
+                            #leftcolumn p{
+                                font-size: 1.5rem;
+                            }
+
+                            #icons{
+                                display: flex;
+                                flex-direction: column;
+                            }
+
+                             /* Colone droite*/
+
+                             article h2{/*titres : formations , exp pro etc...*/
+                                font-size: 2rem;
+                             }
+
+                             li p{     /* la taille de police de paragraphes*/                            
+                                font-size: 1.5rem;
+                                
+                            }
+
+                            h4{
+                                font-size: 1.8rem;
+                            }
+
+                        .RECOMMANDATIONS {
+                            font-size: 1.5rem;
+                        }
+
+
+
+                        }
+
 
 
                     
