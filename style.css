@@ -351,344 +351,56 @@
                             /* Police google fonts*/
                         }
                         
-                        body
-                        /*On définit l'alignement du site*/
                         
-                        {
-                            display: flex;
-                            margin-left: 30%;
-                            /* les marges sert à centrer la page*/
-                            margin-right: 30%;
-                            background-color: black;
-                        }
-                        /*La colone gauche */
-                        
-                        #leftcolumn {
-                            width: 30%;
-                            /* largeur de la colone*/
-                            background-color: hsl(47, 99%, 51%);
-                            background-repeat: repeat;
-                            color: hsl(0, 0%, 25%);
-                            padding-top: 5%;
-                            padding-bottom: 5%;
-                            display: flex;
-                            flex-direction: column;
-                        }
-                        
-                        img {
-                            display: block; /*on demande pour que la balise d'image (inline) se comporte comme un block*/
-                            border: 2px hsl(47, 96%, 32%) solid; /* la bordure invisible autour d'image vas nous permmert à l'arrondir après*/
-                            border-radius: 50%; /*on rend l'image ronde*/
-                            width: 60%;
-                            margin: 0 auto;
-                            margin-bottom: 2rem;                       
-                            }
-                        
-                    
-                        
-                        #aboutme {
-                            flex: 1;
-                        }
-                        
-                        h3
-                        /*titres dans la colone du gauche*/
-                        
-                        {
-                            border: 1rem hsl(0, 0%, 25%) solid;
-                            background-color: hsl(0, 0%, 25%);
-                            color: hsl(47, 99%, 51%);
-                            text-align: center;
-                            font-size: 1.5rem;
-                        }
-                        
-                        #leftcolumn p {
-                            margin: 10%;
-                            font-size: 1.3rem;
-                        }
-                        
-                        #icons {
-                            display: grid;
-                            grid-template-columns: 1fr 1fr 1fr;
-                            margin: 2rem;
-                        }
-                        
-                        .circle {
-                            border: 0.2rem hsl(0, 0%, 25%) solid;
-                            border-radius: 50%;
-                            padding: 1rem;
-                            margin: 0.5rem;
-                            font-size: 3rem;
-                            text-align: center;
-                        }
-                        /*La colone droite*/
-                        
-                        #rightcolumn
-                        /*On travaille sur toute la section droite*/
-                        
-                        {
-                            width: 70%;
-                            color: black;
-                            font-size: 1.5rem;
-                            background-color: hsl(0, 0%, 95%);
-                        }
-                        
-                        #rightcolumn header {
-                            margin-top: 8%;
-                            margin-left: 6.5%;
-                        }
-                        
-                        h1
-                        /* Nom et prénom*/
-                        
-                        {
-                            font-size: 3.5rem;
-                            margin-bottom: 0;
-                        }
-                        
-                        #lastname {
-                            color: hsl(47, 99%, 51%);
-                            font-weight: bold;
-                        }
-                        
-                        header h2
-                        /*Métier*/
-                        
-                        {
-                            margin-bottom: 0;
-                            margin-top: 1rem;
-                            color: hsl(0, 0%, 25%);
-                        }
-                        
-                        .smallunderline
-                        /* div qui sert a créer la petite ligne sous le métier*/
-                        
-                        {
-                            background: hsl(47, 99%, 51%);
-                            width: 10%;
-                            height: 2px;
-                            padding: 0;
-                            margin: 0;
-                            margin-bottom: 5rem;
-                        }
-                        
-                        .underline {
-                            background: hsl(47, 99%, 51%);
-                            width: 100%;
-                            height: 2px;
-                        }
-                        
-                        #rightcolumn article
-                        /*regroupe tous les elements de la colone droite sauf le header*/
-                        
-                        {
-                            margin-left: 5%;
-                            margin-right: 5%;
-                        }
-                        
-                        article h2 {
-                            font-size: 1.4rem;
-                            color: bl;
-                        }
-                        
-                        ul
-                        /*liste a pouces a interieur de chque article*/
-                        
-                        {
-                            list-style: none;
-                            padding-left: 1rem;
-                            color: hsl(0, 0%, 25%);
-                            word-wrap: break-word;
-                            overflow: visible;
-                        }
-                        
-                        li {
-                            display: grid;
-                            grid-template-columns: 2rem 20% 80%;
-                        }
-                        
-                        li div
-                        /* partie droite de liste a pouces (div)*/
-                        
-                        {
-                            padding-left: 2rem;
-                            padding-bottom: 2rem;
-                            padding-right: 2rem;
-                        }
-                        
-                        h4
-                        /* se trouvent a interiere de liste a pouces dans la partie droite*/
-                        
-                        {
-                            font-weight: bold;
-                            margin: 0px;
-                            margin-bottom: 1rem;
-                            padding-top: 0px;
-                        }
-                        
-                        li p
-                        /* il s'agit de dates dans la piste a pouces*/
-                        
-                        {
-                            margin-top: 0;
-                            font-size: 1.1rem;
-                            font-weight: bold;
-                        }
-                        
-                        #rightcolumn i
-                        /* toutes les icones dans la partie droite*/
-                        
-                        {
-                            color: hsl(47, 99%, 51%);
-                            margin-right: 1rem;
-                        }
-                        
-                        ul i
-                        /*les icones dans les listes*/
-                        
-                        {
-                            font-size: 1rem;
-                        }
-                        
-                        a
-                        /* les liens*/
-                        
-                        {
-                            text-decoration: underline;
-                            color: hsl(0, 0%, 25%);
-                        }
-                        
-                        a:hover
-                        /*apparence des liens au survol*/
-                        
-                        {
-                            text-decoration: underline;
-                            font-size: 2rem;
-                        }
-                        
-                        .RECOMMANDATIONS {
-                            display: flex;
-                            justify-content: space-between;
-                            font-size: 1.1rem;
-                            font-weight: bold;
-                            margin: 1rem;
-                        }
-                        
-                        .RECOMMANDATIONS p {
-                            margin: 2rem;
-                            width: 50%;
-                        }
 
                         /*Responsive mobile*/
 
                         @media screen and (max-width: 640px){
-                            body{
-                                flex-direction: column;
-                                margin-right: 0%;
-                                margin-left: 0%;
-                            }
-
-                            /*Colone gauche*/
-
-                            #leftcolumn{
-                                width: 100%;/*Je veux qu'elle prends toute l'espace*/
-                            }
-                                                
-                            h3{
-                                font-size: 3rem;
-                            }
-
-                            #hobbies{
-                                display: none;/*j'ai caché les loisirs pour ne pas trop charger le site en mobile*/
-                            }
-
-                            #leftcolumn p{ /* j'ai agrandi la taille de police dans les paragraphes et j'ai reduit les marges*/
-                                font-size: 2rem; 
-                                margin: 5%;
-                            }
-
-                            /* Colone droite*/
-
-                            #rightcolumn{
-                                width: 100%;/*encore une fois - je veux que la colone prends toute l'espace*/
-                            }
-
-                            #rightcolumn header{ /*j'ai changé l'alignement du texte et j'ai enlevé les marges*/
-                               text-align: center;
-                               margin: auto;
-                               margin-bottom: 7%;  
-                               font-size: 2.2rem;                                                        
-                            }
-
-                            h1{/* j'agrendi le texte -  le nom et le prénom*/
-                                font-size: 5rem;
-                            }
-
-                            .smallunderline{/* j'ai caché la ligne sous le métier*/
-                                display: none;
-                            }
-
-                            article h2{/*titres : formations , exp pro etc...*/
-                                font-size: 3rem;   
-                                text-align: center;                            
-                            }
-                            
-                            /*Display dans les listes*/
-
-                            /*J'ai donné le 'nom' a chaque elemet dans la liste pour le bien disposer dans le grid*/
-
-                            li i {
-                                grid-area: dot;
-                                font-size: 2rem;
-                            }
-
-                            li p{
-                                grid-area: date;   
-                                margin-bottom: 0;
-                                                        
-                            }
-
-                            li div
-                            {
-                                grid-area: description;
-                                text-align: justify;
-                                padding: 0;
-                            }
-
-                        
-                            li{
-                                margin-bottom: 5%;
-                                grid-template-columns: 4rem 50% 50%;
-                                grid-template-rows: 30% 1rem 70%;
+                            body{                               
+                                display: grid;                                 
+                                grid-template-rows: 0.5fr 1fr 1fr 1fr 3fr 2fr 1fr 1fr;                        
                                 grid-template-areas: 
-                                    "dot date ."
-                                    ". . ."
-                                    ". description description";
-                            }
-
-                            /*fin grid*/
-
-                            #rightcolumn article{
-                                margin-bottom: 10%;
-                            }
-
-                            li p{     /* la taille de police de paragraphes*/                            
-                                font-size: 2rem;
+                                    "name"
+                                    "img"
+                                    "contact"
+                                    "aboutme"
+                                    "formation"
+                                    "exp"
+                                    "ref"
+                                    "hobbies";                       
                                 
                             }
 
-                            li span{
-                                display: none;
+                            #name{
+                               grid-area: name;
                             }
 
-                            h4{
-                                font-size: 2.5rem;
+                            #img{
+                                grid-area: img;
+                            }
+
+                            #contact{
+                                grid-area: contact;                                
+                            }
+
+                            #aboutme{
+                                grid-area: aboutme;
+                            }
+
+                            #formation{
+                                grid-area: formation;
+                            }
+
+                            #experience{
+                                grid-area: exp;
                             }
 
                             #reference{
-                                display: none;
+                                grid-area: ref;
+                            }
+
+                            #hobbies{
+                                grid-area: hobbies;
                             }
 
                         }
-
-
-                    
