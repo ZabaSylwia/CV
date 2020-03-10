@@ -712,13 +712,31 @@
                             }
                         
                             #leftcolumn p{
-                                font-size: 1.5rem;
+                                font-size: 1.5rem;                                
                             }
 
                             #icons{
                                 display: flex;
-                                flex-direction: column;                               
-                            }                   
+                                flex-direction: column;                                 
+                                width: 9rem;
+                                 
+                                                         
+                            }  
+                            
+                            #hobbies p{
+                                margin: auto;
+                            }
+                            
+                            #icons span{
+                               
+                                width: 5rem;
+                                height: 5rem;
+                                padding: 1.5rem;
+                            }
+
+                            span i{
+                                font-size: 5rem;
+                            }
 
                              /* Colone droite*/
 
