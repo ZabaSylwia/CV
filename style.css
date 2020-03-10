@@ -581,6 +581,7 @@
                         /*Responsive mobile - small*/
 
                         @media screen and (max-width: 640px){
+
                             body{
                                 flex-direction: column;
                                 margin-right: 0%;
@@ -595,9 +596,7 @@
                                                 
                             h3{
                                 font-size: 3rem;
-                            }
-
-                            
+                            }                            
 
                             #leftcolumn p{ /* j'ai agrandi la taille de police dans les paragraphes et j'ai reduit les marges*/
                                 font-size: 2rem; 
