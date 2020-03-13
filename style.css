@@ -407,17 +407,23 @@
                         #icons {
                             display: grid;
                             grid-template-columns: 1fr 1fr 1fr;
-                            margin: 2rem;
+                            
                         }
-                        
-                        .circle {
+
+                        #icons span{
                             border: 0.2rem hsl(0, 0%, 25%) solid;
                             border-radius: 50%;
-                            padding: 1rem;
-                            margin: 0.5rem;
-                            font-size: 3rem;
-                            text-align: center;
+                            width: 5rem;
+                            height: 5rem;
+                            padding: 1.5rem;
                         }
+
+                        span i{
+                            
+                            font-size: 5rem;
+                        }
+
+                        
                         /*La colone droite*/
                         
                         #rightcolumn
