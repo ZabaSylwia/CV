@@ -703,10 +703,7 @@
                         /*Responsive mobile - medium*/
 
                         @media all and (min-width: 640px) and (max-width: 1199px){
-                            body{
-                                margin-right: 10%;
-                                margin-left: 10%;
-                            }
+                            
 
                             /*Colone gauche*/ 
                             
