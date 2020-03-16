@@ -345,7 +345,7 @@
                         {
                             font-size: 62.5%;
                             /* 1rem=10px*/
-                            word-wrap: break-word;
+                            
                             text-align: justify;
                             font-family: 'Raleway', sans-serif;
                             /* Police google fonts*/
@@ -363,7 +363,7 @@
                         #leftcolumn {
                             width: 30%;
                             /* largeur de la colone*/
-                            background-color:  hsl(174, 100%, 27%);
+                            background-color:  hsl(174, 63%, 40%);
                             background-repeat: repeat;
                             color: hsl(0, 0%, 17%);
                             padding-top: 5%;
@@ -501,7 +501,7 @@
                             list-style: none;
                             padding-left: 1rem;
                             color: hsl(0, 0%, 17%);
-                            word-wrap: break-word;
+                            
                             overflow: visible;
                         }
                         
@@ -597,7 +597,7 @@
                                 margin-left: 0%;
                                 margin: 0;
                                 padding: 0;
-                                word-wrap: break-word;
+                                
                             }
                             /*Colone gauche*/
                             #leftcolumn {
@@ -657,27 +657,18 @@
                             }
                             /*Display dans les listes*/
                             /*J'ai donné le 'nom' a chaque elemet dans la liste pour le bien disposer dans le grid*/
-                            li i {
-                                grid-area: dot;
-                                font-size: 2rem;
-                            }
-                            li p {
-                                grid-area: date;
-                                margin-bottom: 0;
-                            }
-                            li div {
-                                grid-area: description;
-                                text-align: justify;
-                                padding: 0;
-                            }
-                            li {
-                                margin-bottom: 5%;
-                                margin-top: 5%;
-                                grid-template-columns: 4rem 50% 50%;
-                                grid-template-rows: 30% 1rem 70%;
-                                grid-template-areas: "dot date ." ". . ." ". description description";
+                            
+                            ul{
+                                display: flex;
+                                flex-direction: column;
                             }
 
+                            li{
+                                display: flex;   
+                                flex-wrap: wrap;                             
+                            }
+
+                            
                             
 
                             /*fin grid*/
