@@ -677,6 +677,9 @@
                                 grid-template-rows: 30% 1rem 70%;
                                 grid-template-areas: "dot date ." ". . ." ". description description";
                             }
+
+                            
+
                             /*fin grid*/
                             #rightcolumn article {
                                 margin-bottom: 10%;
@@ -689,7 +692,7 @@
                                 display: none;
                             }
                             h4 {
-                                font-size: 2.5rem;
+                                font-size: 2rem;
                             }
 
                             a:hover
