@@ -356,7 +356,6 @@
                         
                         {
                             display: flex;
-                            
                             background-color: black;
                         }
                         /*La colone gauche */
@@ -379,10 +378,8 @@
                             border-radius: 50%; /*on rend l'image ronde*/
                             width: 60%;
                             margin: 0 auto;
-                            margin-bottom: 2rem;                       
-                            }
-                        
-                    
+                            margin-bottom: 2rem;
+                        }
                         
                         #aboutme {
                             flex: 1;
@@ -419,13 +416,10 @@
                             padding: 1.5rem;
                             margin: 0 auto;
                         }
-
-                        span i{
-                            
+                        
+                        span i {
                             font-size: 5rem;
                         }
-
-                        
                         /*La colone droite*/
                         
                         #rightcolumn
@@ -593,7 +587,6 @@
                             width: 50%;
                             font-weight: normal;
                         }
-
                         /*Responsive mobile - small*/
 
                         @media screen and (max-width: 640px){
@@ -603,11 +596,10 @@
                                 margin-right: 0%;
                                 margin-left: 0%;
                             }
-
                             /*Colone gauche*/
-
-                            #leftcolumn{
-                                width: 100%;/*Je veux qu'elle prends toute l'espace*/
+                            #leftcolumn {
+                                width: 100%;
+                                /*Je veux qu'elle prends toute l'espace*/
                             }
 
                             #leftcolumn img{
@@ -616,35 +608,31 @@
                                                 
                             h3{
                                 font-size: 3rem;
-                            }                            
-
-                            #leftcolumn p{ /* j'ai agrandi la taille de police dans les paragraphes et j'ai reduit les marges*/
-                                font-size: 2rem; 
+                            }
+                            #leftcolumn p {
+                                /* j'ai agrandi la taille de police dans les paragraphes et j'ai reduit les marges*/
+                                font-size: 2rem;
                                 margin: 5%;
                             }
-
-                            #icons span{
-                                
+                            #icons span {
                                 width: 5rem;
                                 height: 5rem;
                                 padding: 1.5rem;
                             }
-
-                            span i{
+                            span i {
                                 font-size: 5rem;
                             }
-
                             /* Colone droite*/
-
-                            #rightcolumn{
-                                width: 100%;/*encore une fois - je veux que la colone prends toute l'espace*/
+                            #rightcolumn {
+                                width: 100%;
+                                /*encore une fois - je veux que la colone prends toute l'espace*/
                             }
-
-                            #rightcolumn header{ /*j'ai changé l'alignement du texte et j'ai enlevé les marges*/
-                               text-align: center;
-                               margin: auto;
-                               margin-bottom: 7%;  
-                               font-size: 2.2rem;                                                        
+                            #rightcolumn header {
+                                /*j'ai changé l'alignement du texte et j'ai enlevé les marges*/
+                                text-align: center;
+                                margin: auto;
+                                margin-bottom: 7%;
+                                font-size: 2.2rem;
                             }
 
                             #rightcolumn img{
@@ -655,72 +643,51 @@
                             h1{/* j'agrendi le texte -  le nom et le prénom*/
                                 font-size: 5rem;
                             }
-
-                            .smallunderline{/* j'ai caché la ligne sous le métier*/
+                            .smallunderline {
+                                /* j'ai caché la ligne sous le métier*/
                                 display: none;
                             }
-
-                            article h2{/*titres : formations , exp pro etc...*/
-                                font-size: 3rem;   
-                                text-align: center;                            
+                            article h2 {
+                                /*titres : formations , exp pro etc...*/
+                                font-size: 3rem;
+                                text-align: center;
                             }
-                            
                             /*Display dans les listes*/
-
                             /*J'ai donné le 'nom' a chaque elemet dans la liste pour le bien disposer dans le grid*/
-
                             li i {
                                 grid-area: dot;
                                 font-size: 2rem;
                             }
-
-                            li p{
-                                grid-area: date;   
+                            li p {
+                                grid-area: date;
                                 margin-bottom: 0;
-                                                        
                             }
-
-                            li div
-                            {
+                            li div {
                                 grid-area: description;
                                 text-align: justify;
                                 padding: 0;
                             }
-
-                        
-                            li{
+                            li {
                                 margin-bottom: 5%;
                                 grid-template-columns: 4rem 50% 50%;
                                 grid-template-rows: 30% 1rem 70%;
-                                grid-template-areas: 
-                                    "dot date ."
-                                    ". . ."
-                                    ". description description";
+                                grid-template-areas: "dot date ." ". . ." ". description description";
                             }
-
                             /*fin grid*/
-
-                            #rightcolumn article{
+                            #rightcolumn article {
                                 margin-bottom: 10%;
                             }
-
-                            li p{     /* la taille de police de paragraphes*/                            
+                            li p {
+                                /* la taille de police de paragraphes*/
                                 font-size: 2rem;
-                                
                             }
-
-                            li span{
+                            li span {
                                 display: none;
                             }
-
-                            h4{
+                            h4 {
                                 font-size: 2.5rem;
                             }
-
-                        
-
                         }
-
                         /*Responsive mobile - medium*/
 
                         @media all and (min-width: 640px) and (max-width: 1199px){
@@ -730,59 +697,39 @@
                             
                             h3{
                                 font-size: 2rem;
-                                
                             }
-                        
-                            #leftcolumn p{
-                                font-size: 1.5rem;                                
+                            #leftcolumn p {
+                                font-size: 1.5rem;
                             }
-
-                            #icons{
+                            #icons {
                                 display: flex;
-                                flex-direction: column;                                 
+                                flex-direction: column;
                                 width: 9rem;
-                                 
-                                                         
-                            }  
-                            
-                            #hobbies p{
+                            }
+                            #hobbies p {
                                 margin: auto;
                             }
-                            
-                            #icons span{
-                               
+                            #icons span {
                                 width: 5rem;
                                 height: 5rem;
                                 padding: 1.5rem;
                             }
-
-                            span i{
+                            span i {
                                 font-size: 5rem;
                             }
-
-                             /* Colone droite*/
-
-                             article h2{/*titres : formations , exp pro etc...*/
+                            /* Colone droite*/
+                            article h2 {
+                                /*titres : formations , exp pro etc...*/
                                 font-size: 2rem;
-                             }
-
-                             li p{     /* la taille de police de paragraphes*/                            
-                                font-size: 1.5rem;
-                                
                             }
-
-                            h4{
+                            li p {
+                                /* la taille de police de paragraphes*/
+                                font-size: 1.5rem;
+                            }
+                            h4 {
                                 font-size: 1.8rem;
                             }
-
-                        .RECOMMANDATIONS {
-                            font-size: 1.5rem;
+                            .RECOMMANDATIONS {
+                                font-size: 1.5rem;
+                            }
                         }
-
-
-
-                        }
-
-
-
-                    
