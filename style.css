@@ -340,7 +340,7 @@
                         /* Mon code CSS*/
                         
                         html
-                        /*On défint les propriétés globales du code*/
+                        /*On définit les propriétés globales du site*/
                         
                         {
                             font-size: 62.5%;
@@ -355,9 +355,9 @@
                         /*On définit l'alignement du site*/
                         
                         {
-                            display: flex;
-                            background-color: black;
+                            display: flex;                           
                         }
+
                         /*La colone gauche */
                         
                         #leftcolumn {
@@ -374,8 +374,8 @@
                         
                         img {
                             display: block; /*on demande pour que la balise d'image (inline) se comporte comme un block*/
-                            border: 3px hsl(170, 100%, 15%) solid; /* la bordure invisible autour d'image vas nous permmert à l'arrondir après*/
-                            border-radius: 50%; /*on rend l'image ronde*/
+                            border: 3px hsl(170, 100%, 15%) solid; /* la bordure autour d'image vas nous permettre à l'arrondir après*/
+                            border-radius: 50%; /*on arrondi l'image*/
                             width: 50%;
                            
                             margin: 0 auto;
@@ -435,7 +435,7 @@
                         
                         #rightcolumn header {
                             margin-top: 8%;
-                            margin-left: 6.5%;
+                            margin-left: 5%;
                         }
                         
                         h1
