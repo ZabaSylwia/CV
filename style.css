@@ -366,7 +366,7 @@
                             background-color:  hsl(174, 63%, 40%);
                             background-repeat: repeat;
                             color: hsl(0, 0%, 17%);
-                            padding-top: 5%;
+                            padding-top: 2%;
                             padding-bottom: 2%;
                             display: flex;
                             flex-direction: column;
@@ -376,7 +376,8 @@
                             display: block; /*on demande pour que la balise d'image (inline) se comporte comme un block*/
                             border: 3px hsl(170, 100%, 15%) solid; /* la bordure invisible autour d'image vas nous permmert à l'arrondir après*/
                             border-radius: 50%; /*on rend l'image ronde*/
-                            width: 60%;
+                            width: 50%;
+                           
                             margin: 0 auto;
                             margin-bottom: 2rem;
                         }
